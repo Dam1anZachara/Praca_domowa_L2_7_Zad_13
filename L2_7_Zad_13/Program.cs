@@ -29,7 +29,14 @@ namespace L2_7_Zad_13
                     Console.WriteLine($"Wynik mnożenia to: {firstNumber * secondNumber}");
                     break;
                 case 4:
-                    Console.WriteLine($"Wynik dzielenia to: {firstNumber / secondNumber}");
+                    if (secondNumber == 0)
+                    {
+                        Console.WriteLine("Nie można dzielić przez zero!");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Wynik dzielenia to: {firstNumber / secondNumber}");
+                    }
                     break;
                 default:
                     Console.WriteLine("Nieprawidłowy numer operacji.");
